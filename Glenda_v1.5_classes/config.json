@@ -1,0 +1,9 @@
+{
+    "created": "2021-03-17, 02:37:00",
+    "images": "frames",
+    "annotations": "annots",
+    "labels": "labels.txt",
+    "colors": "colors.txt",
+    "updated": "2021-03-17, 02:37:07",
+    "coco_full": "coco.json"
+}
