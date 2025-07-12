@@ -34,37 +34,33 @@ Reports are auto-generated in **Persian**, detailing lesion type and anatomical 
 
 ## 📂 Repository Structure
 
-📂 Repository Structure
+```
 .
-├── api/                          # FastAPI-based backend
-│   ├── __pycache__/              # Cached Python files
-│   ├── output_single/            # Prediction outputs (masks, overlays)
-│   ├── test_frames/              # Input frames for testing
-│   ├── app.py                    # Main FastAPI application
-│   ├── best.pth                  # Trained model weights
-│   ├── model.py                  # Inference logic
-│   └── *.png                     # Temporary prediction result images
+├── api/                              # FastAPI-based backend
+│   ├── app.py                        # Main FastAPI application
+│   ├── model.py                      # Inference logic
+│   ├── best.pth                      # Trained model weights
+│   ├── output_single/                # Prediction outputs (masks, overlays)
+│   ├── test_frames/                  # Input frames for testing
+│   └── *.png                         # Temporary prediction result images
 │
-├── Glenda_v1.5_classes/         # Dataset and training artifacts
-│   ├── annots/                  # Annotation masks
-│   ├── frames/                  # Raw video frames
-│   ├── logs_unet/               # Training logs
-│   ├── masks_numeric/           # Numerical masks for segmentation
-│   ├── split_vis/               # Train/val/test split visualizations
-│   └── callesification.ipynb    # Notebook for classification/analysis
-    ├── coco.json                # COCO-style annotation file
-    ├── config.json              # Configuration file for model or pipeline
-    ├── label_colors.html        # Color legend for label visualization
-    ├── labels.txt               # List of semantic class labels
-    ├── loss_curve.png           # Training loss curve
-    ├── model.py                 # Possibly alternate model definition
-    ├── statistics_overall.csv   # Evaluation metrics and results
-    ├── val_dice_curve.png       # Validation Dice score over epochs
-    └── Screenshot*.png         
-     # Miscellaneous screenshots
-
-
----
+├── Glenda_v1.5_classes/              # Dataset and training artifacts
+│   ├── annots/                       # Annotation masks
+│   ├── frames/                       # Raw video frames
+│   ├── logs_unet/                    # Training logs
+│   ├── masks_numeric/                # Numerical masks for segmentation
+│   ├── split_vis/                    # Train/val/test split visualizations
+│   ├── callesification.ipynb         # Notebook for classification/analysis
+│   ├── coco.json                     # COCO-style annotation file
+│   ├── config.json                   # Configuration file for model or pipeline
+│   ├── label_colors.html             # Color legend for label visualization
+│   ├── labels.txt                    # List of semantic class labels
+│   ├── loss_curve.png                # Training loss curve
+│   ├── model.py                      # Possibly alternate model definition
+│   ├── statistics_overall.csv        # Evaluation metrics and results
+│   ├── val_dice_curve.png            # Validation Dice score over epochs
+│   └── Screenshot*.png               # Miscellaneous screenshots
+```
 
 ## 📊 Evaluation (Test Set)
 
