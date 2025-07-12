@@ -72,7 +72,9 @@ Reports are auto-generated in **Persian**, detailing lesion type and anatomical 
 | Sensitivity  | 0.3359  |
 | Accuracy     | 0.7565  |
 
-> ⚠️ These metrics reflect real-world challenges such as **class imbalance** and **irregularly shaped or small lesion areas**.
+> ⚠️ These metrics reflect real-world challenges such as **class imbalance**, **visually subtle lesions**, and **small or irregular lesion shapes** – common in real-world laparoscopic imagery.
+>
+> 🔍 **Note:** High accuracy may be misleading due to dominance of background pixels. Metrics like **Dice**, **IoU**, and **Recall** are more meaningful for medical segmentation tasks.
 
 ---
 
